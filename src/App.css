@@ -1,33 +1,33 @@
 .App {
   text-align: center;
 }
-    .input-container {
+.input-container {
   margin-bottom: 20px;
 }
-    .input-container input {
+.input-container input {
   padding: 10px;
   font-size: 16px;
   margin-right: 10px;
 }
-    .input-container button {
+.input-container button {
   padding: 10px;
   font-size: 16px;
 }
-    ul {
+ul {
   list-style: none;
   padding: 0;
 }
-    li {
+li {
   padding: 10px;
   font-size: 18px;
   border-bottom: 1px solid #ccc;
   display: flex;
   justify-content: space-between;
 }
-    li.completed span {
+li.completed span {
   text-decoration: line-through;
 }
-    li button {
+li button {
   background: red;
   color: white;
   border: none;
