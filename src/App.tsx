@@ -1,24 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import MyNewComponent from "./components/MyNewComponent";
+import { useSelector } from "react-redux";
+import { RootState } from "./store";
 
 function App() {
+  const title = "Props Title";
+  const todos = useSelector((state: RootState) => state.todos.todos);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MyNewComponent title={title} />
     </div>
   );
 }
